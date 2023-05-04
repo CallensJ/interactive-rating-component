@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Overpass", sans-serif;
 }
 
 //colors
@@ -18,7 +21,6 @@ $neutral-dark-blue: hsl(213, 19%, 18%);
 $neutral-very-dark-blue: hsl(216, 12%, 8%);
 
 //setup
-
 .container {
   height: 100vh;
   display: flex;
@@ -29,33 +31,76 @@ $neutral-very-dark-blue: hsl(216, 12%, 8%);
     width: 375px;
     border: 1px solid black;
     background-color: $neutral-very-dark-blue;
+    border-radius: 1rem;
+    .inner-component {
+      margin: 2rem;
+
+      .submit{
+        width: 100%;
+        margin: 3rem 0;
+        text-align: center;
+        .btn{
+          text-transform: uppercase;
+          letter-spacing: .1rem;
+          width: 90%;
+          padding: 1rem;
+          border-radius: 2rem;
+          background-color: $primary;
+          color: $neutral-white;
+          border: none;
+        }
+      }
+
+    }
+
+    .icon-star {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      
+
+      .star {
+        padding: 1rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: $neutral-dark-blue;
+      }
+    }
 
     .text {
       color: $neutral-white;
       font-size: 1.5rem;
       padding: 1rem;
+      .title{
+        padding: 0 1rem;
+      }
 
       .paragraph {
         color: $neutral-light-gray;
         font-size: 1.2rem;
         line-height: 1.8rem;
         margin-top: 1rem;
+        padding: 1rem;
       }
     }
 
-    .rating{
-        display: flex;
-        justify-content: space-around;
+    .rating {
+      display: flex;
+      justify-content: space-evenly;
 
-        .rounded-full{
-            margin: 1rem;
-            padding: 2rem;
-            border: 1px solid $neutral-white;
-            font-size: 1.2rem;
-            color: $neutral-light-gray;
-            background-color: $neutral-dark-blue;
-            border-radius: 50%;
-        }
+      .rounded-full {
+        padding: 2rem;
+        font-size: 1.2rem;
+        color: $neutral-light-gray;
+        background-color: $neutral-dark-blue;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }
