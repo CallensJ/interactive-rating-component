@@ -20,93 +20,94 @@ $neutral-medium-gray: hsl(216, 12%, 54%);
 $neutral-dark-blue: hsl(213, 19%, 18%);
 $neutral-very-dark-blue: hsl(216, 12%, 8%);
 
-//setup
+//general setup
 .container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  .component {
-    width: 375px;
+.submit-btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  .btn {
+    background-color: $primary;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 1.4rem;
+    border: none;
+    color: $neutral-white;
+    border-radius: 2rem;
+  }
+}
+.rounded-full {
+  height: 4rem;
+  width: 4rem;
+  background-color: $neutral-dark-blue;
+  padding: 2.4rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $neutral-medium-gray;
+  margin-right: 2.4rem;
+}
+.star {
+  padding: 1.4rem;
+  border-radius: 50%;
+  background-color: $neutral-dark-blue;
+}
+.title {
+  color: $neutral-white;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+.paragraph {
+  color: $neutral-light-gray;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
-    background-color: $neutral-very-dark-blue;
-    border-radius: 1rem;
-    .inner-component {
-      margin: 2rem;
-
-      .submit {
-        width: 100%;
-        margin: 3rem 0;
-        text-align: center;
-        .btn {
-          text-transform: uppercase;
-          letter-spacing: 0.1rem;
-          width: 90%;
-          padding: 1rem;
-          border-radius: 2rem;
-          background-color: $primary;
-          color: $neutral-white;
-          border: none;
-        }
-      }
-    }
-
-    .icon-star {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1rem;
-
-      .star {
-        padding: 1rem;
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-        background-color: $neutral-dark-blue;
-      }
-    }
-
-    .text {
-      color: $neutral-white;
-      font-size: 1.5rem;
-      padding: 1rem;
-      .title {
-        padding: 0 1rem;
-      }
-
-      .paragraph {
-        color: $neutral-light-gray;
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        margin-top: 1rem;
-        padding: 1rem;
-      }
-    }
-
+.component {
+  width: 375px;
+  background-color: $neutral-very-dark-blue;
+  border-radius: 1rem;
+  .inner-component {
+    margin: 1rem;
+    padding: 1rem;
     .rating {
       display: flex;
-      justify-content: space-evenly;
-
-      .rounded-full {
-        padding: 2rem;
-        font-size: 1.2rem;
-        color: $neutral-light-gray;
-        background-color: $neutral-dark-blue;
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      justify-content: flex-start;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
+}
 
-  .hidden {
-    display: none;
+.modal {
+  text-align: center;
+
+  .rating-selected {
+    color: $primary;
+    padding: 0.5rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    background-color: $neutral-dark-blue;
+    margin: 1rem auto;
+    border-radius: 2rem;
   }
-
-  .modal {
-    border: 1px solid black;
+  .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .paragraph {
+    text-align: center;
+    padding: 1rem;
   }
 }

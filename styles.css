@@ -11,80 +11,95 @@ html {
 }
 
 .container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
-.container .component {
+
+.submit-btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.submit-btn .btn {
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  padding: 1.4rem;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+}
+
+.rounded-full {
+  height: 4rem;
+  width: 4rem;
+  background-color: hsl(213, 19%, 18%);
+  padding: 2.4rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(216, 12%, 54%);
+  margin-right: 2.4rem;
+}
+
+.star {
+  padding: 1.4rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.paragraph {
+  color: hsl(217, 12%, 63%);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.component {
   width: 375px;
   background-color: hsl(216, 12%, 8%);
   border-radius: 1rem;
 }
-.container .component .inner-component {
-  margin: 2rem;
+.component .inner-component {
+  margin: 1rem;
+  padding: 1rem;
 }
-.container .component .inner-component .submit {
-  width: 100%;
-  margin: 3rem 0;
+.component .inner-component .rating {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal {
   text-align: center;
 }
-.container .component .inner-component .submit .btn {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  width: 90%;
-  padding: 1rem;
+.modal .rating-selected {
+  color: hsl(25, 97%, 53%);
+  padding: 0.5rem;
+  width: 15rem;
+  font-size: 1.2rem;
+  background-color: hsl(213, 19%, 18%);
+  margin: 1rem auto;
   border-radius: 2rem;
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
-  border: none;
 }
-.container .component .icon-star {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
+.modal .title {
+  font-size: 2.2rem;
+  font-weight: 700;
 }
-.container .component .icon-star .star {
+.modal .paragraph {
+  text-align: center;
   padding: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: hsl(213, 19%, 18%);
-}
-.container .component .text {
-  color: hsl(0, 0%, 100%);
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-.container .component .text .title {
-  padding: 0 1rem;
-}
-.container .component .text .paragraph {
-  color: hsl(217, 12%, 63%);
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-.container .component .rating {
-  display: flex;
-  justify-content: space-evenly;
-}
-.container .component .rating .rounded-full {
-  padding: 2rem;
-  font-size: 1.2rem;
-  color: hsl(217, 12%, 63%);
-  background-color: hsl(213, 19%, 18%);
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container .hidden {
-  display: none;
-}
-.container .modal {
-  border: 1px solid black;
 }/*# sourceMappingURL=styles.css.map */
