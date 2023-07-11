@@ -32,6 +32,7 @@ html {
   border: none;
   color: hsl(0, 0%, 100%);
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .rounded-full {
@@ -46,6 +47,17 @@ html {
   align-items: center;
   color: hsl(216, 12%, 54%);
   margin-right: 2.4rem;
+  cursor: pointer;
+}
+
+.rounded-full:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 54%);
+  transition: 0.3s;
+}
+
+.rounded-full.active {
+  color: yellowgreen;
 }
 
 .star {

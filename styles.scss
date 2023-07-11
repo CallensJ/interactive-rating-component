@@ -42,8 +42,10 @@ $neutral-very-dark-blue: hsl(216, 12%, 8%);
     border: none;
     color: $neutral-white;
     border-radius: 2rem;
+    cursor: pointer;
   }
-}
+
+  }
 .rounded-full {
   height: 4rem;
   width: 4rem;
@@ -56,6 +58,17 @@ $neutral-very-dark-blue: hsl(216, 12%, 8%);
   align-items: center;
   color: $neutral-medium-gray;
   margin-right: 2.4rem;
+  cursor: pointer;
+}
+.rounded-full:hover{
+  color: $neutral-white;
+  background-color: $neutral-medium-gray;
+  transition: .3s;
+  
+}
+
+.rounded-full.active{
+  color: yellowgreen;
 }
 .star {
   padding: 1.4rem;
