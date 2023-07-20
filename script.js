@@ -10,7 +10,6 @@ ratingButtons.forEach((ratingBtn) => {
     ratingBtn.classList.add("active");
     //console.log(ratingBtn.innerHTML)
 
-
     selected.innerHTML = ratingBtn.innerHTML;
   });
 });
