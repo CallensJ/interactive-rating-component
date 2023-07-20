@@ -52,12 +52,13 @@ html {
 
 .rounded-full:hover {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(216, 12%, 54%);
+  background-color: hsl(25, 97%, 53%);
   transition: 0.3s;
 }
 
 .rounded-full.active {
-  color: yellowgreen;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 54%);
 }
 
 .star {

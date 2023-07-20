@@ -62,13 +62,14 @@ $neutral-very-dark-blue: hsl(216, 12%, 8%);
 }
 .rounded-full:hover{
   color: $neutral-white;
-  background-color: $neutral-medium-gray;
+  background-color: $primary;
   transition: .3s;
   
 }
 
 .rounded-full.active{
-  color: yellowgreen;
+  color: $neutral-white;
+  background-color: $neutral-medium-gray;
 }
 .star {
   padding: 1.4rem;
